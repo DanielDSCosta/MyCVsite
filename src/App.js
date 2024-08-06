@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import './App.css';
 import { Header, Footer } from './components';
 import { Home, About, Skills, Courses, Achievements, Contact } from './pages';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
