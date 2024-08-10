@@ -1,7 +1,8 @@
 .courses-container {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 20px;
+    text-align: center; /* Centrer le contenu */
   }
   
   .courses-title {
@@ -13,12 +14,13 @@
   .courses-content {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    justify-content: center; /* Centrer le contenu */
+    margin-bottom: 30px; /* Ajouter plus d'espace entre chaque ligne */
+    flex-wrap: wrap; /* Permettre aux éléments de se déplacer sur une nouvelle ligne si nécessaire */
   }
   
   .courses-date {
-    flex: 0 0 100px; /* Largeur fixe pour les dates */
-    text-align: left;
+    font-weight: bold; /* Mettre les dates en gras */
     margin-right: 20px;
   }
   
@@ -27,5 +29,24 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    flex: 1; /* Prend tout l'espace restant */
+    display: inline-block; /* Ajuster la taille des rectangles */
+    text-align: left; /* Aligner le texte à gauche à l'intérieur des rectangles */
+  }
+  
+  /* Styles pour les appareils mobiles */
+  @media (max-width: 768px) {
+    .courses-content {
+      flex-direction: column; /* Disposer les éléments en colonne */
+      align-items: flex-start; /* Aligner les éléments à gauche */
+    }
+  
+    .courses-date {
+      margin-right: 0;
+      margin-bottom: 10px; /* Ajouter un espace en bas pour séparer les dates des boîtes */
+    }
+  
+    .courses-box {
+      width: 100%; /* Prendre toute la largeur disponible */
+      text-align: center; /* Centrer le texte à l'intérieur des boîtes */
+    }
   }

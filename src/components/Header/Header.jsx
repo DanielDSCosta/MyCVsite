@@ -19,7 +19,7 @@ function Header() {
           </Link>
           <Link to="#about" className="header__link" activeClassName="header__link--active">À propos</Link>
           <Link to="#skills" className="header__link" activeClassName="header__link--active">Compétences</Link>
-          <Link to="#courses" className="header__link" activeClassName="header__link--active">Cours</Link>
+          <Link to="#courses" className="header__link" activeClassName="header__link--active">Parcours</Link>
           <Link to="#achievements" className="header__link" activeClassName="header__link--active">Réalisations</Link>
           <Link to="#contact" className="header__link" activeClassName="header__link--active">Contact</Link>
         </nav>
@@ -34,7 +34,7 @@ function Header() {
         <div className="header__popup__separator"></div>
         <Link to="#about" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>À propos</Link>
         <Link to="#skills" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Compétences</Link>
-        <Link to="#courses" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Cours</Link>
+        <Link to="#courses" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Parcours</Link>
         <Link to="#achievements" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Réalisations</Link>
         <Link to="#contact" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Contact</Link>
       </div>

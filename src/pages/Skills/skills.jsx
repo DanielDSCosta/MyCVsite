@@ -17,6 +17,7 @@ function Skills() {
             <li>SCSS</li>
             <li>JavaScript</li>
             <li>React</li>
+            <li>Redux</li>
           </ul>
         </div>
         <div className="skills-icon">
@@ -35,6 +36,7 @@ function Skills() {
           <ul className="skills-list">
             <li>Node.js</li>
             <li>SQL</li>
+            <li>BDD</li>
           </ul>
         </div>
       </div>
@@ -47,6 +49,7 @@ function Skills() {
           <ul className="skills-list">
             <li>Git</li>
             <li>VS Code</li>
+            <li>Netlify</li>
           </ul>
           <p>
             <strong>Système d'exploitation :</strong> Windows
