@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Header.scss';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome
 
@@ -14,33 +14,29 @@ function Header() {
     <>
       <header className="header">
         <nav className="header__nav">
-          <NavLink to="/" className="header__link" activeClassName="header__link--active">
+          <Link to="#home" className="header__link" activeClassName="header__link--active">
             <i className="fa-solid fa-house"></i>
-          </NavLink>
-          <NavLink to="/page2" className="header__link" activeClassName="header__link--active">Page 2</NavLink>
-          <NavLink to="/page3" className="header__link" activeClassName="header__link--active">Page 3</NavLink>
-          <NavLink to="/page4" className="header__link" activeClassName="header__link--active">Page 4</NavLink>
-          <NavLink to="/page5" className="header__link" activeClassName="header__link--active">Page 5</NavLink>
-          <NavLink to="/page6" className="header__link" activeClassName="header__link--active">Page 6</NavLink>
+          </Link>
+          <Link to="#about" className="header__link" activeClassName="header__link--active">À propos</Link>
+          <Link to="#skills" className="header__link" activeClassName="header__link--active">Compétences</Link>
+          <Link to="#courses" className="header__link" activeClassName="header__link--active">Cours</Link>
+          <Link to="#achievements" className="header__link" activeClassName="header__link--active">Réalisations</Link>
+          <Link to="#contact" className="header__link" activeClassName="header__link--active">Contact</Link>
         </nav>
       </header>
       <button className="header__menu-button" onClick={toggleMenu}>
         ☰
       </button>
       <div className={`header__popup ${menuOpen ? 'header__popup--open' : ''}`}>
-        <NavLink to="/" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>
+        <Link to="#home" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>
           <i className="fa-solid fa-house"></i>
-        </NavLink>
+        </Link>
         <div className="header__popup__separator"></div>
-        <NavLink to="/page2" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Page 2</NavLink>
-        <div className="header__popup__separator"></div>
-        <NavLink to="/page3" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Page 3</NavLink>
-        <div className="header__popup__separator"></div>
-        <NavLink to="/page4" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Page 4</NavLink>
-        <div className="header__popup__separator"></div>
-        <NavLink to="/page5" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Page 5</NavLink>
-        <div className="header__popup__separator"></div>
-        <NavLink to="/page6" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Page 6</NavLink>
+        <Link to="#about" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>À propos</Link>
+        <Link to="#skills" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Compétences</Link>
+        <Link to="#courses" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Cours</Link>
+        <Link to="#achievements" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Réalisations</Link>
+        <Link to="#contact" className="header__popup__link" activeClassName="header__link--active" onClick={toggleMenu}>Contact</Link>
       </div>
     </>
   );
