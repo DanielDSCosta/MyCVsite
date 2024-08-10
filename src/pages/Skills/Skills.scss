@@ -1,0 +1,82 @@
+.skills-container {
+    background-color: lightgray;
+    padding: 20px;
+  }
+  
+  .skills-title {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px; /* Ajoute un espacement entre les icônes et les rectangles */
+  }
+  
+  .skills-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: inline-block; /* Permet au rectangle de s'ajuster à son contenu */
+    max-width: 100%; /* Empêche le rectangle de dépasser la largeur du conteneur parent */
+  }
+  
+  .skills-icon {
+    font-size: 5em; /* Ajustez la taille de l'icône selon vos besoins */
+    color: #ba55d3;
+    flex: 0 0 auto; /* Empêche l'icône de s'étirer */
+  }
+  
+  .skills-icon.back-end {
+    color: #1e90ff; /* Change la couleur de l'icône Back End en bleu */
+  }
+
+  .skills-icon.work-environment {
+    color: #32cd32; /* Change la couleur de l'icône Environnement de travail en vert */
+  }
+  
+  .skills-box h3 {
+    color: #ba55d3; /* Même couleur que l'icône */
+    margin-bottom: 10px; /* Marge entre le h3 et le p */
+  }
+  
+  .skills-box h3.back-end-title {
+    color: #1e90ff; /* Même couleur que l'icône Back End */
+  }
+
+  .skills-box h3.work-environment-title {
+    color: #32cd32; /* Même couleur que l'icône Environnement de travail */
+  }
+  
+  .skills-box p {
+    margin-bottom: 10px; /* Marge entre le p et la liste */
+  }
+  
+  .skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes */
+    gap: 10px; /* Espacement entre les éléments */
+    list-style-type: disc; /* Style de la liste à puces */
+    padding-left: 20px; /* Indentation de la liste */
+    margin-bottom: 10px; /* Ajoute une marge en bas de la liste */
+  }
+  
+  @media (max-width: 768px) {
+    .skills-content {
+      flex-direction: column; /* Empile les éléments verticalement sur les petits écrans */
+      align-items: flex-start; /* Aligne les éléments au début */
+    }
+  
+    .skills-icon {
+      display: none; /* Masque les icônes sur les petits écrans */
+    }
+  
+    .skills-icon {
+      margin-bottom: 10px; /* Ajoute une marge en bas de l'icône pour l'espacement */
+    }
+  }
