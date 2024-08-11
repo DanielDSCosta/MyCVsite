@@ -1,0 +1,101 @@
+.achievements-container {
+    background-color: lightgrey;
+    padding: 20px;
+  }
+  
+  .achievements-title {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .achievement-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .achievement-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .achievement-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .achievement-card:hover .achievement-overlay {
+    transform: translateY(0);
+  }
+  
+  .github-link {
+    margin-top: 20px; /* Ajoute une marge au-dessus du paragraphe */
+    text-align: center; /* Centre le texte */
+    font-weight: bold; /* Met le texte en gras */
+  }
+  
+  .achievement-name {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .skills {
+    color: #ba55d3; /* Changez cette couleur selon vos besoins */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    color: black; /* Changez cette couleur selon vos besoins */
+    text-align: left;
+  }
+  
+  /* Styles pour la version mobile */
+  @media (max-width: 600px) {
+    .achievements-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .achievement-card {
+      height: 300px;
+    }
+  
+    .achievement-card:hover {
+      transform: scale(1.05); /* Ajustez l'échelle si nécessaire */
+    }
+  }

@@ -7,7 +7,7 @@ function Skills() {
       <h2 className="skills-title">Compétences</h2>
       
       {/* Première rangée avec l'icône à droite */}
-      <div className="skills-content">
+      <div className="skills-content animate">
         <div className="skills-box">
           <h3>Front End</h3>
           <p>Création et intégration de sites web et applications mobiles responsive, accessibles et répondant aux normes W3C.</p>
@@ -26,7 +26,7 @@ function Skills() {
       </div>
       
       {/* Deuxième rangée avec l'icône à gauche */}
-      <div className="skills-content">
+      <div className="skills-content animate">
         <div className="skills-icon back-end">
           <i className="fa-solid fa-database"></i>
         </div>
@@ -42,7 +42,7 @@ function Skills() {
       </div>
 
       {/* Troisième rangée avec l'icône à droite */}
-      <div className="skills-content">
+      <div className="skills-content animate">
         <div className="skills-box">
           <h3 className="work-environment-title">Environnement de travail</h3>
           <p>Utilisation d'outils et de plateformes pour le développement et la gestion de projets.</p>

@@ -66,6 +66,21 @@
     margin-bottom: 10px; /* Ajoute une marge en bas de la liste */
   }
   
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate {
+    animation: slideInFromLeft 1s ease-out;
+  }
+  
   @media (max-width: 768px) {
     .skills-content {
       flex-direction: column; /* Empile les éléments verticalement sur les petits écrans */
