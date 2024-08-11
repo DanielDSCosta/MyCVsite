@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
-import './global.css'; // Import global CSS
+import './global.css'; 
 import { Header, Footer } from './components';
 import { Home, About, Skills, Courses, Achievements, Contact } from './pages';
 import '@fortawesome/fontawesome-free/css/all.min.css';
